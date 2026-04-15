@@ -1,6 +1,7 @@
 import { CORE_CONCEPTS } from './data';
-import Header from './components/Header';
-import CoreConcept from './components/CoreConcept';
+import Header from './components/Header/Header';
+import CoreConcept from './components/CoreConcepts/CoreConcept';
+import TabButton from './components/TabButton/TabButton';
 //function UserData() {
 //const user = { first: "Praj", last: "Patel", age: "20" };
 //return (
@@ -41,6 +42,15 @@ function App() {
               }
             />
           </ul>
+        </section>
+        <section id="examples">
+          <h2>Examples</h2>
+          <menu>
+            <TabButton type="essential">Components</TabButton>
+            <TabButton type="non-essential">JSX</TabButton>
+            <TabButton type="non-essential">Props</TabButton>
+            <TabButton type="non-essential">State</TabButton>
+          </menu>
         </section>
       </main>
     </div>
