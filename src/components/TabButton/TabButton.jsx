@@ -2,13 +2,13 @@ import './TabButton.css';
 function handleClick() {
 
 }
-export default function TabButton({ children }) {
-    function handleClick() {
-        console.log("hello World");
-    }
+export default function TabButton({ children, onSelect }) {
+    // function handleClick() {
+    //     console.log("hello World");
+    // }
     return (
         <li>
-            <button onClick={handleClick}>{children}</button>
+            <button onClick={onSelect}>{children}</button>
         </li>
     )
 }
