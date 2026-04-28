@@ -1,5 +1,5 @@
 import TabButton from "./TabButton/TabButton";
-import Section from "../Section";
+import Section from "./Section";
 
 export default function Examples({ selectedTopic, handleSelect }) {
     return (
